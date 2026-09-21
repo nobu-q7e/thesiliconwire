@@ -1,0 +1,37 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+
+  <!-- Chip pins -->
+  <g fill="#e2e8f0">
+    <!-- top -->
+    <rect x="176" y="96"  width="20" height="40"/>
+    <rect x="246" y="96"  width="20" height="40"/>
+    <rect x="316" y="96"  width="20" height="40"/>
+    <!-- bottom -->
+    <rect x="176" y="376" width="20" height="40"/>
+    <rect x="246" y="376" width="20" height="40"/>
+    <rect x="316" y="376" width="20" height="40"/>
+    <!-- left -->
+    <rect x="96"  y="176" width="40" height="20"/>
+    <rect x="96"  y="246" width="40" height="20"/>
+    <rect x="96"  y="316" width="40" height="20"/>
+    <!-- right -->
+    <rect x="376" y="176" width="40" height="20"/>
+    <rect x="376" y="246" width="40" height="20"/>
+    <rect x="376" y="316" width="40" height="20"/>
+  </g>
+
+  <!-- Chip body -->
+  <rect x="136" y="136" width="240" height="240" rx="20"
+        fill="#0f172a" stroke="#e2e8f0" stroke-width="10"/>
+
+  <!-- Red signal / wire trace through the chip -->
+  <polyline points="166,296 216,296 236,216 276,216 296,336 336,336 346,256"
+            fill="none" stroke="#cc0000" stroke-width="14"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Endpoint nodes on the trace -->
+  <circle cx="166" cy="296" r="10" fill="#cc0000"/>
+  <circle cx="346" cy="256" r="10" fill="#cc0000"/>
+</svg>
