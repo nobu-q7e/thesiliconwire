@@ -288,9 +288,102 @@
                     <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition">Modding</span>
                     <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition">Server Infrastructure</span>
                 `
+            },
+            maksim: {
+                category: 'Gaming / Real-World Incident',
+                cardCategory: 'Gaming',
+                title: "Roblox Player 'monkeymaksim13' Falls Off Ladder Attempting to Recreate 'Steal an Egg' in Real Life",
+                subtitle: "The reigning high-score holder in the viral egg-heist game tried to bring the grind offline for a content clip. The ladder did not cooperate.",
+                excerpt: "Known for topping the leaderboard in 'Steal an Egg,' monkeymaksim13 decided a real nest would make better content than a virtual one.",
+                author: 'By Renee Castillo',
+                meta: 'September 19, 2026 • 4 min read',
+                avatarSrc: 'https://placehold.co/100x100/365314/ffffff?text=MM13',
+                avatarAlt: 'monkeymaksim13',
+                cardIcon: 'fa-solid fa-egg',
+                cardGradient: 'from-lime-950 via-[#1a2e05] to-black',
+                heroHTML: `
+                    <div class="w-full h-64 md:h-[400px] bg-gradient-to-br from-lime-950 via-[#1a2e05] to-black rounded-lg relative overflow-hidden flex items-center justify-center border border-gray-800">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#84cc16 1px, transparent 1px); background-size: 20px 20px;"></div>
+                        <div class="z-10 text-center">
+                            <i class="fa-solid fa-egg text-6xl text-lime-500/60 mb-4 animate-pulse"></i>
+                            <h3 class="text-white font-mono font-bold text-2xl tracking-widest drop-shadow-[0_0_10px_rgba(132,204,22,0.8)]">INCIDENT: LADDER_EGG_01</h3>
+                            <p class="text-lime-300 font-mono text-sm mt-2">STATUS: GROUNDED | EGGS SECURED: 0</p>
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-black/60 backdrop-blur px-3 py-1 text-xs font-mono text-yellow-400 border border-yellow-900 rounded">
+                            <i class="fa-solid fa-triangle-exclamation text-[8px] animate-pulse mr-1"></i> INCIDENT LOGGED
+                        </div>
+                    </div>
+                    <figcaption class="text-xs text-gray-500 mt-2 font-sans">
+                        A neighbor's doorbell camera caught the entire attempt, ladder wobble included. (Graphic: The Silicon Wire)
+                    </figcaption>
+                `,
+                bodyHTML: `
+                    <p class="drop-cap">
+                        monkeymaksim13, the streamer widely regarded as the best "Steal an Egg" player alive, spent Thursday afternoon proving that a skill built entirely inside a Roblox server does not, in fact, transfer to a backyard. He climbed an aluminum extension ladder toward a nest in a neighbor's tree, reached for the egg, and fell approximately eleven feet onto a flowerbed, live on stream.
+                    </p>
+                    <p>
+                        "Steal an Egg," the game that made him famous, tasks players with sneaking into rival bases to swipe rare eggs while avoiding motion sensors and guard NPCs — a formula maksim has mastered so thoroughly that his leaderboard rank has gone unchallenged for eleven straight weeks. For his latest video, titled simply "IRL EGG RUN (no cap)," he decided the natural next step was doing it for real.
+                    </p>
+
+                    <blockquote class="border-l-4 border-brand-red pl-6 py-2 my-8 italic text-2xl font-serif text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800/50 rounded-r-lg">
+                        "I heard him yell 'no lag this time' right before the ladder started leaning. There was, in fact, lag. Just not the kind he meant."
+                        <footer class="text-sm font-sans text-gray-500 dark:text-gray-400 not-italic mt-3 font-bold">— Neighbor, watching from the driveway</footer>
+                    </blockquote>
+
+                    <p>
+                        Chat had been begging him to "just clip in already" for several minutes as he adjusted the ladder's footing on uneven grass — a detail several viewers later pointed out has no equivalent difficulty setting in the game. Maksim made it to the second-to-top rung, stretched toward the nest, and the ladder shifted out from under him. The egg, witnesses confirmed, was untouched.
+                    </p>
+
+                    <div class="my-10 bg-slate-900 rounded-xl border border-slate-700 shadow-2xl overflow-hidden font-sans">
+                        <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex justify-between items-center">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500 cursor-blink"></div>
+                                <h4 class="text-white font-bold text-sm tracking-widest uppercase">Live Field Incident Tracker</h4>
+                            </div>
+                            <span class="text-[10px] text-slate-400 font-mono">TELEMETRY_LINK_ACTIVE</span>
+                        </div>
+                        <div class="p-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div class="text-center sm:text-left">
+                                <p class="text-slate-400 text-xs font-bold uppercase mb-1">Eggs Successfully Stolen</p>
+                                <div id="live-eggs" class="text-3xl font-mono font-bold text-red-400 tabular-nums">0</div>
+                                <p class="text-[10px] text-red-500/70 mt-1">Still zero. Run failed.</p>
+                            </div>
+                            <div class="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-slate-700 pt-4 sm:pt-0 sm:pl-6">
+                                <p class="text-slate-400 text-xs font-bold uppercase mb-1">Estimated Fall Height</p>
+                                <div id="live-fallheight" class="text-3xl font-mono font-bold text-yellow-400 tabular-nums">11.0 ft</div>
+                                <p class="text-[10px] text-yellow-500/70 mt-1">Re-measured with every replay</p>
+                            </div>
+                            <div class="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-slate-700 pt-4 sm:pt-0 sm:pl-6">
+                                <p class="text-slate-400 text-xs font-bold uppercase mb-1">Clip Replays</p>
+                                <div id="live-replays" class="text-3xl font-mono font-bold text-lime-400 tabular-nums">184,204</div>
+                                <p class="text-[10px] text-lime-500/70 mt-1">Climbing faster than he did</p>
+                            </div>
+                        </div>
+                        <div class="bg-black/50 px-4 py-2 font-mono text-[10px] text-gray-500">
+                            <span class="text-green-500">></span> SYS_LOG: <span id="terminal-log-maksim">Bird has not left the area. Bird seems fine with this...</span>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-sans font-bold text-gray-900 dark:text-white mt-8 mb-4">The Grind Doesn't Stop</h3>
+                    <p>
+                        Maksim was treated for minor bruising and a sprained wrist and released the same evening. No birds, eggs, or nests were harmed in the incident. Local wildlife officials have asked, gently but firmly, that content creators leave real nests to real birds going forward.
+                    </p>
+                    <p>
+                        True to form, Maksim posted an update from his couch, ice pack in one hand, phone in the other. "Run didn't count anyway, I fell before the pickup animation triggered," he said. "Respawning tomorrow. Different tree. Bigger ladder."
+                    </p>
+                    <p>
+                        His leaderboard rank in "Steal an Egg" remains unaffected. As one commenter put it, "he's still undefeated in the game that doesn't have fall damage."
+                    </p>
+                `,
+                tagsHTML: `
+                    <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition">Gaming</span>
+                    <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition">Roblox</span>
+                    <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition">Viral</span>
+                    <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-bold uppercase px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer transition">Content Creation</span>
+                `
             }
         };
 
         // Controls the order (and therefore which cards appear first) on the home screen.
         // To add a new article: add it to `articles` above, then push its id here.
-        const articleOrder = ['classic', 'chawe', 'rufus'];
+        const articleOrder = ['maksim', 'classic', 'chawe', 'rufus'];
