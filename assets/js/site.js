@@ -338,7 +338,7 @@
         //
         // SETUP REQUIRED: after you deploy the Worker, paste its URL below.
         const ACCOUNTS_CONFIG = {
-            workerUrl: '' // e.g. 'https://silicon-wire-accounts.nobu-q7e.workers.dev'
+            workerUrl: 'https://silicon-wire-accounts.nobu-q7e.workers.dev'
         };
 
         let currentBookmarks = []; // cached list of this session's bookmarked article ids
